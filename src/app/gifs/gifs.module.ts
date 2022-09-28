@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GifsPagesComponent } from './gifs-pages/gifs-pages.component';
+
 import { BusquedaComponent } from './busqueda/busqueda.component';
+import { GifsPagesComponent } from './gifs-pages/gifs-pages.component';
 import { ResultadosComponent } from './resultados/resultados.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -10,10 +12,11 @@ import { ResultadosComponent } from './resultados/resultados.component';
   declarations: [
     GifsPagesComponent,
     BusquedaComponent,
-    ResultadosComponent
+    ResultadosComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     GifsPagesComponent

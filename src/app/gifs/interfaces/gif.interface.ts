@@ -13,6 +13,12 @@ export interface SerachGifsResponse {
   meta: Meta;
 }
 
+export interface GifResponse{
+  data: Gif;
+  pagination: Pagination;
+  meta: Meta;
+}
+
 export interface Gif {
   type: Type;
   id: string;
